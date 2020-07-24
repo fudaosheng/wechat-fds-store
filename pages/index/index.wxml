@@ -1,0 +1,43 @@
+<view class="container">
+    <navbar>
+        <view slot="left">天天优购</view>
+        <view slot="center" class="search">
+            <navigator url="../../pages/search/index" open-type="navigate">搜索</navigator>
+            <image class="" src="../../imgs/content/search.svg" class="search-img" />
+        </view>
+    </navbar>
+    <swiper class="swi" indicator-dots autoplay circular indicator-color="#fff" indicator-active-color="#fe3b98">
+        <swiper-item class="" item-id="" wx:for="{{swiperList}}" wx:key="goods_id">
+            <navigator url="{{item.navigator_url}}">
+                <image class="swi-img" src="{{item.image_src}}" mode="widthFix" />
+            </navigator>
+
+        </swiper-item>
+    </swiper>
+
+    <view class="cate">
+        <view class="cate-item" wx:for="{{cateList}}" wx:key="index"> 
+            <navigator class="" target="" url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+              <image class="" src="{{item.image_src}}" mode="widthFix"/> 
+            </navigator>
+        </view>   
+    </view>
+
+    <view class="fooldata" wx:for="{{foolList}}" wx:key="index" wx:for-item="list">
+        <view class="fool-title">
+            <image class="" src="{{list.floor_title.image_src}}" mode="widthFix" lazy-load="true"/>      
+        </view>
+        <view class="fool-content">
+            <view class="fool-con-iten"   wx:for="{{list.product_list}}" wx:for-index="index2" wx:key="index2">
+                <navigator url="{{item.navigator_url}}" open-type="navigate">
+                    <image class="" src="{{item.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" lazy-load="true"/>
+                </navigator> 
+            </view>
+               
+        </view>
+            
+    </view>
+      
+      
+
+</view>

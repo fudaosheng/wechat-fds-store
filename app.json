@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/category/index", 
+    "pages/index/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index", 
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationStyle":"custom",
+    "navigationBarBackgroundColor": "#fe3b98",
+    "navigationBarTitleText": "天天优购",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#fe5982",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./imgs/icons/home.png",
+      "selectedIconPath": "./imgs/icons/home-o.png"
+    },
+    {
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "./imgs/icons/category.png",
+      "selectedIconPath": "./imgs/icons/category-o.png"
+    },
+    {
+      "pagePath": "pages/cart/index",
+      "text": "购物车",
+      "iconPath": "./imgs/icons/cart.png",
+      "selectedIconPath": "./imgs/icons/cart-o.png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath": "./imgs/icons/my.png",
+      "selectedIconPath": "./imgs/icons/my-o.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

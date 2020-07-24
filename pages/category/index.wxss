@@ -1,0 +1,72 @@
+.nav-title{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 120rpx;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    height: calc(100vh - 160rpx);
+    display: flex;
+}
+.left{
+    width: 25%;
+    height: 100%;
+}
+.left-menu{
+    width: 100%;
+    text-align: center;
+    line-height: 90rpx;
+    color: #585c64;
+    background: #f6f6f7;
+}
+.menu-item{
+    width: 100%;
+    height: 90rpx;
+}
+.action{
+    background:var(--text-color);
+    color: var(--text-color-tint);
+    border-left: 3px solid var(--theme-tint);
+}
+.right{
+    width: 75%;
+    height: 100%;
+}
+.right-con{
+    width: 100%;
+    padding-left:14rpx ;
+}
+.group{
+    width: 100%;
+}
+.group-title{
+    padding: 10rpx 0;
+    width: 100%;
+    height: 60rpx;
+    font-weight: 800;
+    line-height: 60rpx;
+}
+.group-con{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.good{
+    width: 30%;
+    margin-right: 12rpx;
+    margin-top: 10rpx;
+}
+.good-icon{
+    width: 100%;
+}
+.good-icon image{
+    width: 100%;
+}
+.good-name{
+    width: 100%;
+    text-align: center;
+    font-size: 26rpx;
+}

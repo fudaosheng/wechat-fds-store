@@ -1,0 +1,8 @@
+.search{
+    width: 100%;
+}
+.search-group{
+    width: 100%;
+    height: 160rpx;
+    line-height: 160rpx;
+}

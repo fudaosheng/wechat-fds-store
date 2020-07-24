@@ -1,0 +1,15 @@
+/**app.wxss**/
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+page{
+  /* 主题演色 */
+  --theme:#fe3b98;
+  --theme-tint:#f32353;
+  /* 字体颜色 */
+  --text-color-tint:#de3db0;
+  --text-color:#fff;
+  --text-gray:#b7b7b7
+}

@@ -1,0 +1,62 @@
+.search{
+  width: 90%;
+  height: 60rpx;
+  color: var(--text-gray);
+  text-align: center;
+  border-radius: 20rpx;
+  line-height: 60rpx;
+  background: var(--text-color);
+  position: relative;
+}
+.search-img{
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.swi{
+  width: 100%;
+  height: 340rpx;
+}
+.swi-img{
+  width: 100%;
+}
+.cate{
+  width: 100%;
+  display: flex;
+}
+.cate-item{
+  flex: 1;
+  height: 100%;
+}
+.cate-item image{
+  width: 100%;
+}
+.fooldata{
+  width: 100%;
+  padding: 10rpx 0;
+}
+.fool-title{
+  width: 100%;
+}
+.fool-title image{
+  width: 100%;
+}
+.fool-content{
+  width: 100%;
+  clear: both;
+  height: 416rpx;
+  border-left: 6rpx solid #fff;
+  border-right: 6rpx solid #fff;
+}
+.fool-content .fool-con-iten{
+width:33.3%;
+float: left;
+}
+.fool-con-iten image{
+ width:100% ;
+ height: 204rpx;
+}

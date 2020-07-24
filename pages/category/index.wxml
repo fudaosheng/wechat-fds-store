@@ -1,0 +1,43 @@
+<view class="category">
+    <navbar>
+        <view class="nav-title" slot="center">商品分类</view>
+    </navbar>
+    <view class="container">
+        <scroll-view scroll-y class="left">
+            <view class="left-menu">
+                <view class="menu-item {{index1==currentIndex?'action':''}}" wx:for="{{menu}}" wx:for-item="menu" 
+                wx:for-index="index1" 
+                wx:key="index1" bindtap="menuClick" data-index="{{index1}}">
+                    {{menu}}
+                </view>    
+            </view>
+        </scroll-view>
+        <scroll-view class="right" scroll-y>
+            <view class="right-con">
+                <view class="group" wx:for="{{content}}"  wx:for-item="con" wx:for-index="index2" wx:key="index2">
+                    <view class="group-title">{{con.cat_name}}</view>
+                    <view class="group-con">
+                        <view class="good" wx:for="{{con.children}}"  wx:for-item="cl" wx:for-index="index3" wx:key="index3">
+                            <view class="good-icon"> 
+                                <navigator  open-type="navigate">
+                                   <image class="" src="{{cl.cat_icon}}" mode="widthFix" lazy-load="false"/>  
+                                </navigator>
+                                <view class="good-name">
+                                    {{cl.cat_name}}
+                                </view>
+                                  
+                            </view>
+                              
+                        </view>
+                          
+                    </view>
+                        
+                </view>
+                  
+            </view>
+        </scroll-view>
+          
+    </view>
+      
+</view>
+  

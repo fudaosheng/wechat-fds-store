@@ -1,0 +1,9 @@
+<view class="navbar">
+    <view class="nav-left">
+        <slot name="left"></slot>
+    </view>
+    <view class="nav-center">
+        <slot name="center"></slot>
+    </view>
+      
+</view>
