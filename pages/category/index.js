@@ -1,10 +1,12 @@
 import { _cateGory } from '../../network/category'
+import regeneratorRuntime from '../../libs/runtime/runtime'
 Page({
 
   data: {
     menu: [],
     content: [],
-    currentIndex: 0
+    currentIndex: 0,
+    scrollTo:0
   },
   Cates: [],
   onLoad: function (options) {
@@ -35,7 +37,6 @@ Page({
 
   /**自定义函数 */
   menuClick(e) {
-    console.log(e);
     let currentIndex = e.currentTarget.dataset.index;
     this.setData({ currentIndex });
     this.setContent();
@@ -44,23 +45,39 @@ Page({
   setContent() {
     //  console.log(Object.prototype.toString.call(this.data.currentIndex));
     this.setData({
-      content: this.Cates[this.data.currentIndex].children
+      content: this.Cates[this.data.currentIndex].children,
+      scrollTo:0
     })
   },
   /**获取初始化数据 */
-  handleDate() {
-    _cateGory().then(res => {
-      this.Cates = res.data.message;
-      /**保存数据 */
-      wx.setStorageSync("cates", { time: Date.now(), data: this.Cates })
+  async handleDate() {
+    /**es6写法 */
+    
+    // _cateGory().then(res => {
+    //   this.Cates = res.data.message;
+    //   /**保存数据 */
+    //   wx.setStorageSync("cates", { time: Date.now(), data: this.Cates })
+    //   let _menu = this.Cates.map(item => {
+    //     return item.cat_name;
+    //   })
+    //   let _contnet = this.Cates[0].children;
+    //   this.setData({
+    //     menu: _menu,
+    //     content: _contnet
+    //   })
+    // })
+
+    /**es7写法 */
+    const res = await _cateGory();
+    this.Cates = res.data.message;
+    wx.setStorageSync("cates", { time: Date.now(), data: this.Cates });
       let _menu = this.Cates.map(item => {
         return item.cat_name;
-      })
+      });
       let _contnet = this.Cates[0].children;
       this.setData({
         menu: _menu,
         content: _contnet
-      })
-    })
-  }
+  })
+}
 })

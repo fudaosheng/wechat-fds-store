@@ -12,14 +12,14 @@
                 </view>    
             </view>
         </scroll-view>
-        <scroll-view class="right" scroll-y>
+        <scroll-view class="right" scroll-y scroll-top="{{scrollTo}}">
             <view class="right-con">
                 <view class="group" wx:for="{{content}}"  wx:for-item="con" wx:for-index="index2" wx:key="index2">
                     <view class="group-title">{{con.cat_name}}</view>
                     <view class="group-con">
                         <view class="good" wx:for="{{con.children}}"  wx:for-item="cl" wx:for-index="index3" wx:key="index3">
                             <view class="good-icon"> 
-                                <navigator  open-type="navigate">
+                                <navigator url="/pages/goods_list/index?cid={{cl.cat_id}}" open-type="navigate">
                                    <image class="" src="{{cl.cat_icon}}" mode="widthFix" lazy-load="false"/>  
                                 </navigator>
                                 <view class="good-name">

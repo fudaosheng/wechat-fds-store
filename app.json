@@ -16,7 +16,6 @@
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationStyle":"custom",
     "navigationBarBackgroundColor": "#fe3b98",
     "navigationBarTitleText": "天天优购",
     "navigationBarTextStyle":"white",

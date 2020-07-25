@@ -1,1 +1,3 @@
-/* pages/goods_list/index.wxss */
+.group{
+    width: 100%;
+}

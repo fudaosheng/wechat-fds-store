@@ -1,0 +1,14 @@
+.tabs{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #f6f6f6;
+}
+.tabs-item{
+    flex: 1;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.action{
+    border-bottom: 2px solid var(--theme);
+}

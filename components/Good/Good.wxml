@@ -1,0 +1,19 @@
+<view class="good-item">
+    <navigator open-type="navigate" url="../../pages/goods_detail/index?goods_id={{item.goods_id}}" class="nav">
+        <view class="left">
+            <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"
+                lazy-load="false" binderror="" bindload="" />
+
+        </view>
+        <view class="right">
+            <view class="top">
+                {{item.goods_name}}
+            </view>
+            <view class="bottom">
+                ￥{{item.goods_price}}
+            </view>
+
+        </view>
+    </navigator>
+
+</view>

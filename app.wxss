@@ -9,7 +9,7 @@ page{
   --theme:#fe3b98;
   --theme-tint:#f32353;
   /* 字体颜色 */
-  --text-color-tint:#de3db0;
+  --text-color-tint:#fc3971;
   --text-color:#fff;
   --text-gray:#b7b7b7
 }

@@ -1,2 +1,7 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<view class="good-list">
+    <Tabs tabs="{{tabs}}" binditemClick="itemClick"></Tabs>
+    <view class="group">
+        <Good wx:for="{{goodList}}" wx:key="index" item="{{item}}"/>
+    </view>
+
+</view>
