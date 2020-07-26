@@ -1,1 +1,105 @@
-/* pages/pay/index.wxss */
+.cart{
+    width: 100%;
+}
+.cart-scroll{
+    height: calc(100vh - 98rpx);
+}
+.address{
+    padding: 20rpx;
+    font-size: 26rpx;
+    border-top:2px solid #f6f6f6 ;
+    border-bottom:2px solid #f6f6f6 ;
+}
+.base{
+    display: flex;
+}
+.base view{
+    flex: 1;
+}
+.name{
+    text-align: left;
+}
+.phone{
+    text-align: right;
+}
+.address-con{
+    padding:10rpx 0rpx 0rpx 0rpx;
+}
+.cart-good{
+    height: 190rpx;
+    display: flex;
+    padding: 20rpx;
+}
+.left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.pic{
+    flex: 2;
+    text-align: center;
+}
+.pic image{
+    width: 80%;
+}
+.content{
+    flex: 4;
+    font-size: 26rpx;
+    color:#666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.name{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.group{
+    display: flex;
+}
+.group-left{
+    font-size: 36rpx;
+    color: var(--text-color-tint);
+}
+.group view{
+    flex: 1;
+}
+.group-tool{
+    display: flex;
+}
+.num{
+    text-align: center;
+    line-height: 48rpx;
+}
+
+.cart-bottom{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    height: 98rpx;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0rpx;
+}
+.cart-bottom-left{
+    flex: 2;
+    padding-left: 20rpx;
+}
+.cart-bottom-center{
+    flex: 4;
+    text-align: center;
+}
+.cart-bottom-center text{
+    font-size: 40rpx;
+    color: var(--text-color-tint);
+}
+.cart-bottom-right{
+    flex: 2;
+    background: #fc3971;
+    color: #fff;
+    height: 100%;
+    line-height: 98rpx;
+    text-align: center;
+}

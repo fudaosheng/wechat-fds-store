@@ -67,23 +67,16 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/goods_list/index",
-					"pathName": "pages/goods_list/index",
-					"query": "cid=5",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/goods_detail/index",
-					"pathName": "pages/goods_detail/index",
-					"query": "goods_id=13012",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "pages/goods_detail/index",
 					"pathName": "pages/goods_detail/index",
 					"query": "goods_id=43986",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pay/index",
+					"pathName": "pages/pay/index",
+					"query": "",
 					"scene": null
 				}
 			]

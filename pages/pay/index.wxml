@@ -1,2 +1,50 @@
-<!--pages/pay/index.wxml-->
-<text>pages/pay/index.wxml</text>
+<view class="cart">
+    <block wx:if="{{!cart.length==0}}">
+        <scroll-view class="cart-scroll" scroll-y>
+            <view class="address">
+                <view class="base">
+                    <view class="name">收货人： {{address.userName}}</view>
+                    <view class="phone"> {{address.telNumber}}</view>
+                </view>
+                <view class="address-con">{{address.all}}</view>
+            </view>
+            <!-- 购物车商品 -->
+            <view class="cart-good" wx:for="{{cart}}" wx:key="index">
+                <view class="left">
+                    <checkbox-group>
+                        <checkbox checked="{{item.selected}}" color="#fc3971" bindtap="check" data-index="{{index}}">
+                        </checkbox>
+                    </checkbox-group>
+                </view>
+                <view class="pic">
+                    <navigator open-type="navigate">
+                        <image class="" src="{{item.pc.pics_sma_url}}" mode="widthFix" />
+                    </navigator>
+
+                </view>
+                <view class="content">
+                    <view class="name">{{item.name}}</view>
+                    <view class="group">
+                        <view class="group-left">￥{{item.price}}</view>
+                        <view class="group-tool">
+                            <view class="add"> </view>
+                            <view class="num"> X{{item.num}}</view>
+
+                            <view class="reduce"></view>
+
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+        </scroll-view>
+        <view class="cart-bottom">
+            <view class="cart-bottom-left">
+            </view>
+            <view class="cart-bottom-center">
+                合计：<text>￥{{totalPrice}}</text>
+            </view>
+            <view class="cart-bottom-right" bindtap="buy">支付({{totalCount}})</view>
+        </view>
+    </block>
+</view>

@@ -1,66 +1,71 @@
-// pages/pay/index.js
+import regeneratorRuntime from '../../libs/runtime/runtime'
+import { _getSetting, _chooseAddress, _openSetting ,_showModel,_showToast} from '../../utils/wxSync.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    address: {},
+    cart:[],
+    totalPrice:0,
+    totalCount:0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
+    /**判断本地是否有地址缓存 */
+    const address=wx.getStorageSync('address')||{};
+    this.setData({address});
 
+    let cart = wx.getStorageSync('cart')||[];
+    
+    cart=cart.filter(item=>{
+      return item.selected;
+    })
+    this.setData({cart});
+
+    this.computedCart();
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  /**结算 */
+  async buy(){
+    if(!this.data.address.userName){
+      await _showToast({title:'您还没有添加收获地址~'});
+      return;
+    }
+    if(this.data.cart.length==0){
+      await _showToast({title:'您还没有要购买的物品~'});
+      return;
+    }
+    wx.navigateTo({
+      url: '/pages/pay/index',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  /**商品复选框 */
+  check(e){
+    let {index} =e.currentTarget.dataset;
+    let cart=this.data.cart;
+    cart[index].selected=!cart[index].selected;
+    this.reset(cart);
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  /**重置 */
+  reset(cart){
+    this.setData({cart});
+    wx.setStorageSync('cart',cart);
+    this.computedCart();
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  /**获取总价，结算数量，是否全选 */
+  computedCart(){
+    let totalPrice=0;
+    let totalCount=0;
+    const arr=this.data.cart.filter(item=>{
+      return item.selected;
+    });
+    totalCount=arr.length;
+    totalPrice=arr.reduce((pre,item)=>{
+      return pre+item.price*item.num;
+    },0);
+    this.setData({
+      totalCount,
+      totalPrice
+    })
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
