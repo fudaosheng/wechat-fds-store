@@ -1,2 +1,72 @@
-<!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view class="profile">
+    <view class="backg">
+       <navigator open-type="navigate" url="../../pages/login/index" wx:if="{{!userInfo.nickName}}">
+           登陆
+       </navigator>
+       <view class="userInfo" wx:else>
+            <image class="bac-img" src="{{userInfo.avatarUrl}}" mode="widthFix"  />
+             <view class="base">
+                 <image class="avatar" src="{{userInfo.avatarUrl}}" mode="scaleToFill"  />
+                 {{userInfo.nickName}}
+             </view>
+                
+       </view>
+    </view>
+    <view class="block">
+        <view class="vi">
+            <view class="group">
+                <view class="tint">0</view>
+                <view>收藏的店铺</view>
+            </view>
+            <view class="group">
+                <view class="tint">0</view>
+                <view>收藏的商品</view>
+            </view>
+            <view class="group">
+                <view class="tint">0</view>
+                <view>关注的商品</view>
+            </view>
+            <view class="group">
+                <view class="tint">0</view>
+                <view>我的足迹</view>
+            </view>
+        </view>
+    
+        <view class="program">
+           <view class="title"> 我的订单 </view>
+           <view class="vi">
+            <view class="group">
+                <view class="tint iconfont icon-ding_dan"></view>
+                <view>全部订单</view>
+            </view>
+            <view class="group">
+                <view class="tint iconfont icon-fukuantongzhi"></view>
+                <view>待付款</view>
+            </view>
+            <view class="group">
+                <view class="tint iconfont icon-receipt-address"></view>
+                <view>待收货</view>
+            </view>
+            <view class="group">
+                <view class="tint iconfont icon-tuihuotuikuan_dianpu"></view>
+                <view>退款/售后</view>
+            </view>
+        </view>  
+        </view>
+
+        <view class="address">
+            收获地址管理
+        </view>
+         
+        <view class="ateraction">
+        <view>联系客服</view>
+        <view>意见反馈</view>
+        <view>联系我们</view>
+        </view>
+
+        <view class="address">
+            把应用推荐给其他人
+        </view>
+          
+    </view>     
+</view>

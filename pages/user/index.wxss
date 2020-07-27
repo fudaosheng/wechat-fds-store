@@ -1,1 +1,99 @@
-/* pages/user/index.wxss */
+page{
+    background: #f3f4f5;
+}
+.prifile{
+    width: 100%;
+}
+.backg{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.backg navigator{
+    padding: 20rpx;
+    border: 1px solid var(--theme);
+    border-radius: 10rpx;
+    color: var(--theme-tint);
+}
+.block{
+    padding: 0rpx 40rpx;
+}
+.userInfo{
+    width: 100%;
+    position: relative;
+}
+.userInfo .bac-img{
+    width: 100%;
+    filter: blur(120rpx);
+}
+.base{
+    position: absolute;
+    width: 200rpx;
+    height: 200rpx;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.avatar{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.vi{
+    width: 100%;
+    height: 118rpx;
+    display: flex;
+    font-size: 26rpx;
+    transform: translateY(-59rpx);
+    background: #fff;
+}
+.group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tint{
+    font-size: 32rpx;
+    color: var(--text-color-tint);
+}
+.program{
+    background: #fff;
+}
+.title{
+    font-size: 32rpx;
+    padding: 10rpx 0rpx;
+    border-bottom: 1px solid #ccc;
+}
+.program .vi{
+    transform: none;
+}
+.address{
+    width: 100%;
+    height: 80rpx;
+    background: #fff;
+    line-height: 80rpx;
+    margin-top: 30rpx;
+}
+.ateraction{
+    background: #fff;
+    margin-top: 30rpx;
+}
+.ateraction view{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #ccc;
+}
