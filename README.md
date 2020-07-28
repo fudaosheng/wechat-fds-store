@@ -6,9 +6,12 @@
  **项目效果图** 
 |首页 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/161937_faa09008_7602838.jpeg "Screenshot_2020_0728_153909.jpg")  | 分类![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162004_4ce4ab1f_7602838.jpeg "Screenshot_2020_0728_153924.jpg")  | 商品列表  ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162033_fb07e6f1_7602838.jpeg "Screenshot_2020_0728_153944.jpg")|
 |---|---|---|
-|商品详情 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162107_a05e812d_7602838.jpeg "Screenshot_2020_0728_153955.jpg")  |购物车 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162139_8862e9d9_7602838.jpeg "Screenshot_2020_0728_154015.jpg")  |支付页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162220_e0af5e5d_7602838.jpeg "Screenshot_2020_0728_154024.jpg")   |收藏页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162243_a34e73c1_7602838.jpeg "Screenshot_2020_0728_154049.jpg")
-| 个人中心 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162455_9e448ba2_7602838.jpeg "Screenshot_2020_0728_154101.jpg") |问题反馈![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162523_05e297f7_7602838.jpeg "Screenshot_2020_0728_154143.jpg")   | 搜索页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162543_dba300a5_7602838.jpeg "Screenshot_2020_0728_154206.jpg")  |
 
+| 商品详情 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162932_35232384_7602838.jpeg "Screenshot_2020_0728_153955.jpg") |购物车 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162953_418c87ed_7602838.jpeg "Screenshot_2020_0728_154015.jpg")  | 支付页面  ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/163018_523ca792_7602838.jpeg "Screenshot_2020_0728_154024.jpg")|
+|---|---|---|
+
+|个人中心 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/163121_080ad878_7602838.jpeg "Screenshot_2020_0728_154101.jpg")  |商品收藏页面 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/163146_ae904321_7602838.jpeg "Screenshot_2020_0728_154049.jpg")  | 问题反馈页面 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/163208_4f23a868_7602838.jpeg "Screenshot_2020_0728_154143.jpg") | 搜索页面  ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/163228_1bdcaf7e_7602838.jpeg "Screenshot_2020_0728_154206.jpg")|
+|---|---|---|---|
 
 
 #### 码云特技
