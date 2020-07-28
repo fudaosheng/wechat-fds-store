@@ -1,30 +1,14 @@
 # 微信-fds-store
 
 #### 介绍
-微信小程序-高仿唯品会
+微信小程序-高仿唯品会,项目由首页、分类、商品列表、商品详情、购物车、支付页面、个人中心、收藏页面、搜索页面、问题反馈页面组成
 
-#### 软件架构
-软件架构说明
+ **项目效果图** 
+|首页 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/161937_faa09008_7602838.jpeg "Screenshot_2020_0728_153909.jpg")  | 分类![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162004_4ce4ab1f_7602838.jpeg "Screenshot_2020_0728_153924.jpg")  | 商品列表  ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162033_fb07e6f1_7602838.jpeg "Screenshot_2020_0728_153944.jpg")|
+|---|---|---|
+|商品详情 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162107_a05e812d_7602838.jpeg "Screenshot_2020_0728_153955.jpg")  |购物车 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162139_8862e9d9_7602838.jpeg "Screenshot_2020_0728_154015.jpg")  |支付页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162220_e0af5e5d_7602838.jpeg "Screenshot_2020_0728_154024.jpg")   |收藏页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162243_a34e73c1_7602838.jpeg "Screenshot_2020_0728_154049.jpg")
+| 个人中心 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162455_9e448ba2_7602838.jpeg "Screenshot_2020_0728_154101.jpg") |问题反馈![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162523_05e297f7_7602838.jpeg "Screenshot_2020_0728_154143.jpg")   | 搜索页面![输入图片说明](https://images.gitee.com/uploads/images/2020/0728/162543_dba300a5_7602838.jpeg "Screenshot_2020_0728_154206.jpg")  |
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
 
 #### 码云特技
