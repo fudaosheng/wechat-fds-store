@@ -11,10 +11,20 @@ export function _goodDetail(id){
 export class Good{
     constructor(id,name,pic,price,num,selected=true){
         this.goods_id=id;
-        this.name=name;
-        this.pc=pic;
-        this.price=price;
+        this.goods_name=name;
+        this.pic=pic;
+        this.goods_price=price;
         this.num=num;
         this.selected=selected;
     }
+}
+
+/**商品搜索 */
+export function _Search(keyword){
+    return request({
+        url:'/api/public/v1/goods/qsearch',
+        data:{
+            query:keyword
+        }
+    })
 }

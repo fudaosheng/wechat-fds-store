@@ -61,7 +61,7 @@ Page({
     });
     totalCount=arr.length;
     totalPrice=arr.reduce((pre,item)=>{
-      return pre+item.price*item.num;
+      return pre+item.goods_price*item.num;
     },0);
     this.setData({
       totalCount,

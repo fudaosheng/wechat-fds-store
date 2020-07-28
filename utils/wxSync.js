@@ -60,3 +60,16 @@ export function _showToast(option) {
     })
   })
 }
+/**选择图片封装 */
+export function _chooseImage(){
+  return new Promise((resolve,reject)=>{
+    wx.chooseImage({
+      count: 9,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success (res) {
+        resolve(res);
+      }
+    })
+  })
+}

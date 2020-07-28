@@ -5,6 +5,7 @@ Page({
     tabs:['综合','销量','价格'],
     currentIndex:0,
     cid:0,
+    query:'',
     pagenum:1,
     pagesize:10,
     goodList:[],
@@ -15,8 +16,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let {cid}=options;
-    this.setData({cid});
+    console.log(options);
+    let cid=options.cid||'';
+    let query=options.query||'';
+    this.setData({cid,query});
+    console.log(this.data.cid,query);
     this.handleData();
   },
   onReachBottom(){
@@ -46,7 +50,8 @@ Page({
   },
   /**页面数据 */
   async handleData(){
-    const res=await _good_List(this.data.cid,this.data.pagenum,this.data.pagesize);
+    const res=await _good_List(this.data.query,this.data.cid,this.data.pagenum,this.data.pagesize);
+    console.log(res);
     let {goods,total} =res.data.message;
     this.totalPageSize=Math.ceil(total/this.data.pagesize);
     this.setData({

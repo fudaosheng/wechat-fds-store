@@ -1,2 +1,4 @@
-<!--pages/collect/index.wxml-->
-<text>pages/collect/index.wxml</text>
+<view class="collect">
+   <Good wx:for="{{collect}}" wx:key="index" item="{{item}}"></Good> 
+</view>
+  

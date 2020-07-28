@@ -19,9 +19,15 @@ Page({
       })
     })
   _foolData().then(res=>{
-    this.setData({
-      foolList: res.data.message
-    })
+    let foolList=res.data.message;
+    /**对链接进行转换 */
+    for(let i of foolList){
+      for(let j=0,length=i.product_list.length;j<length;j++){
+        let list=i.product_list;
+        list[j].navigator_url=list[j].navigator_url.replace('?','/index?');
+      }
+    }
+    this.setData({foolList})
   })
   },
 

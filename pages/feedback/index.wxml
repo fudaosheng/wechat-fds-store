@@ -1,2 +1,24 @@
-<!--pages/feedback/index.wxml-->
-<text>pages/feedback/index.wxml</text>
+<view class="feedback">
+ <view class="title">
+     问题的种类
+ </view>
+ <view class="group">
+     <view class="item {{index==currentIndex?'action':''}}" wx:for="{{list}}" wx:key="index" 
+     bindtap="handleTap" data-index="{{index}}">
+         {{item}}
+     </view>     
+ </view>
+  <view class="content">
+     <textarea class="area" value="{{value}}" placeholder="请输入您的问题" bindinput="hanleInput"></textarea>
+     <view class="tool">
+        <view class="choose" bindtap="chooseImg">+</view>  
+        <ImgIcon wx:for="{{tempFilePaths}}" wx:key="index" img="{{item}}"></ImgIcon>  
+     </view>
+  </view>
+  <view class="sub" bindtap="sub">
+      提交
+  </view>
+       
+      
+</view>
+  

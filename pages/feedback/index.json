@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "ImgIcon":"../../components/imgIcon/ImgIcon"
+  },
+  "navigationBarTitleText": "意见反馈"
 }

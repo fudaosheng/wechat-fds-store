@@ -103,7 +103,7 @@ Page({
      allSelect=true;
     }
     totalPrice=arr.reduce((pre,item)=>{
-      return pre+item.price*item.num;
+      return pre+item.goods_price*item.num;
     },0);
     this.setData({
       allSelect,

@@ -16,8 +16,9 @@
             <view class="name">
                 {{good.goods_name}}
             </view>
-            <view class="cart">
-                <image src="../../imgs/content/cart.svg" mode="widthFix" />
+            <view class="cart" bindtap="collect">
+                <image src="../../imgs/content/cart.svg" mode="widthFix" hidden="{{isCollect}}"/>
+                <image src="../../imgs/content/cart-a.svg" mode="widthFix" hidden="{{!isCollect}}"/> 
                 <view class="collect_text">收藏</view>
             </view>
         </view>

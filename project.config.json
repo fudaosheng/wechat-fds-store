@@ -67,15 +67,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/goods_detail/index",
-					"pathName": "pages/goods_detail/index",
-					"query": "goods_id=43986",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/user/index",
-					"pathName": "pages/user/index",
+					"name": "意见反馈",
+					"pathName": "pages/feedback/index",
 					"query": "",
 					"scene": null
 				}

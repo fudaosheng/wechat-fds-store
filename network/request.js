@@ -1,7 +1,6 @@
 let ajaxTimer = 0;
 export function request(option) {
     ajaxTimer++;
-    console.log('timer:' + ajaxTimer);
     wx.showLoading({
         title: '加载中',
     })

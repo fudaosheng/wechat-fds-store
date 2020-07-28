@@ -1,0 +1,8 @@
+<view class="img-icon">
+  <image class="img" src="{{img}}"/>
+    <icon class="icon" type="clear" size="23" color="red">
+        
+    </icon>
+        
+</view>
+  

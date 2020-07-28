@@ -1,2 +1,11 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<view class="test">
+<view class="group">
+  <view>
+    天天优购
+</view>
+  <view>
+     学习版 
+  </view>
+</view>
+      
+</view>

@@ -4,7 +4,8 @@ Page({
 
   data: {
     goods_id:0,
-    good:null
+    good:null,
+    isCollect:false
   },
 
   /**
@@ -14,6 +15,23 @@ Page({
     let {goods_id}=options;
     this.setData({goods_id});
     this.getGoodDetail();
+  },
+  /**收藏商品 */
+  collect(){
+    let isCollect=!this.data.isCollect;
+    this.setData({isCollect});
+    let collect=wx.getStorageSync('collect')||[];
+    if(this.data.isCollect){
+      let obj=this.data.good;
+      let good=new Good(this.data.goods_id,obj.goods_name,obj.pics[0],obj.goods_price,1);
+      collect.push(good);
+    }else{
+      let index=collect.findIndex(item=>{
+        return item.goods_id==this.data.goods_id;
+      });
+      collect.splice(index,1);
+    }
+    wx.setStorageSync('collect', collect);
   },
   /**加入购物车 */
   addCart(){

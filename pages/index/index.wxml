@@ -8,7 +8,7 @@
     </navbar>
     <swiper class="swi" indicator-dots autoplay circular indicator-color="#fff" indicator-active-color="#fe3b98">
         <swiper-item class="" item-id="" wx:for="{{swiperList}}" wx:key="goods_id">
-            <navigator url="{{item.navigator_url}}">
+            <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" open-type="{{item.open_type}}">
                 <image class="swi-img" src="{{item.image_src}}" mode="widthFix" />
             </navigator>
 
@@ -17,7 +17,7 @@
 
     <view class="cate">
         <view class="cate-item" wx:for="{{cateList}}" wx:key="index"> 
-            <navigator class="" target="" url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+            <navigator class="" target="" url="/pages/category/index" open-type="switchTab">
               <image class="" src="{{item.image_src}}" mode="widthFix"/> 
             </navigator>
         </view>   

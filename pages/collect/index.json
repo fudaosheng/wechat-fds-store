@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Good":"../../components/Good/Good"
+  },
+  "navigationBarTitleText": "收藏的商品"
 }

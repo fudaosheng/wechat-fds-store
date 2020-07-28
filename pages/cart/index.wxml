@@ -21,16 +21,16 @@
 
                 </view>
                 <view class="pic">
-                    <navigator open-type="navigate">
-                        <image class="" src="{{item.pc.pics_sma_url}}" mode="widthFix" />
+                    <navigator open-type="navigate" url="../../pages/goods_detail/index?goods_id={{item.goods_id}}">
+                        <image class="" src="{{item.pic.pics_sma_url}}" mode="widthFix" />
 
                     </navigator>
 
                 </view>
                 <view class="content">
-                    <view class="name">{{item.name}}</view>
+                    <view class="name">{{item.goods_name}}</view>
                     <view class="group">
-                        <view class="group-left">￥{{item.price}}</view>
+                        <view class="group-left">￥{{item.goods_price}}</view>
                         <view class="group-tool">
                             <view class="add" bindtap="add" data-index="{{index}}"> +</view>
                             <view class="num"> {{item.num}}</view>

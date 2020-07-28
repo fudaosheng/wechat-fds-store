@@ -1,11 +1,4 @@
 {
   "usingComponents": {},
-  "window": {
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "搜索页面",
-    "backgroundColor": "#eeeeee",
-    "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
-  }
+  "navigationBarTitleText": "搜索页面"
 }
